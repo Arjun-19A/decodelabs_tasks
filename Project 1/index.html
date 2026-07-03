@@ -1,73 +1,273 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TaskFlow</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow AI</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<header>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <nav class="navbar">
-        <h1>TaskFlow</h1>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Tasks</a></li>
-            <li><a href="#">About</a></li>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">TaskFlow<span>AI</span></div>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+
+          <li><a href="#features">Features</a></li>
+
+          <li><a href="#pricing">Pricing</a></li>
+
+          <li><a href="#testimonials">Reviews</a></li>
+
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
 
-</header>
+        <div class="nav-buttons">
+          <button id="themeBtn">🌙</button>
 
+          <button class="primary-btn">Get Started</button>
+        </div>
 
-<main>
+        <div class="menu-btn">☰</div>
+      </nav>
+    </header>
 
-<section class="hero">
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <span class="tag"> 🚀 AI Powered Productivity </span>
 
-    <h2>Organize Your Day Efficiently</h2>
+        <h1>Manage Projects Smarter.</h1>
 
-    <p>
-        Manage your daily tasks with a clean and responsive interface.
-    </p>
+        <p>
+          Collaborate, organize tasks, monitor progress and boost your team's
+          productivity with TaskFlow AI.
+        </p>
 
-</section>
+        <div class="hero-buttons">
+          <button class="primary-btn">Start Free</button>
 
+          <button class="secondary-btn">Watch Demo</button>
+        </div>
+      </div>
 
-<section class="task-section">
+      <div class="hero-right">
+        <img
+          src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900"
+          alt="Dashboard"
+        />
+      </div>
+    </section>
 
-    <div class="input-box">
+    <section class="stats">
+      <div class="stat">
+        <h2>25K+</h2>
 
-        <input
-        type="text"
-        id="taskInput"
-        placeholder="Enter a task">
+        <p>Users</p>
+      </div>
 
-        <button id="addBtn">
-            Add Task
-        </button>
+      <div class="stat">
+        <h2>350+</h2>
 
-    </div>
+        <p>Companies</p>
+      </div>
 
-    <ul id="taskList"></ul>
+      <div class="stat">
+        <h2>98%</h2>
 
-</section>
+        <p>Success Rate</p>
+      </div>
 
-</main>
+      <div class="stat">
+        <h2>4.9★</h2>
 
+        <p>Rating</p>
+      </div>
+    </section>
 
-<footer>
+    <section id="features" class="features">
+      <h2>Why Choose TaskFlow?</h2>
 
-    <p>
-        © 2026 TaskFlow | Internship Project
-    </p>
+      <div class="feature-grid">
+        <div class="card">
+          <div class="icon">🤖</div>
 
-</footer>
+          <h3>AI Planning</h3>
 
-<script src="script.js"></script>
+          <p>Smart task suggestions powered by AI.</p>
+        </div>
 
-</body>
+        <div class="card">
+          <div class="icon">📈</div>
+
+          <h3>Analytics</h3>
+
+          <p>Beautiful dashboards to track project growth.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">👥</div>
+
+          <h3>Collaboration</h3>
+
+          <p>Work together with your entire team.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">☁️</div>
+
+          <h3>Cloud Sync</h3>
+
+          <p>Access projects anywhere.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🔒</div>
+
+          <h3>Security</h3>
+
+          <p>Enterprise-grade encryption.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">⚡</div>
+
+          <h3>Lightning Fast</h3>
+
+          <p>Optimized for speed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="dashboard">
+      <div class="dashboard-text">
+        <h2>Everything In One Dashboard</h2>
+
+        <p>
+          Keep track of your projects with beautiful analytics and intuitive
+          controls.
+        </p>
+      </div>
+
+      <div class="dashboard-image">
+        <img
+          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200"
+          alt="Dashboard"
+        />
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <h2>Pricing Plans</h2>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Starter</h3>
+
+          <h1>Free</h1>
+
+          <ul>
+            <li>3 Projects</li>
+
+            <li>Email Support</li>
+
+            <li>Basic Analytics</li>
+          </ul>
+
+          <button>Choose</button>
+        </div>
+
+        <div class="price-card featured">
+          <span class="popular"> Most Popular </span>
+
+          <h3>Pro</h3>
+
+          <h1>$19/mo</h1>
+
+          <ul>
+            <li>Unlimited Projects</li>
+
+            <li>AI Assistant</li>
+
+            <li>Priority Support</li>
+          </ul>
+
+          <button>Get Started</button>
+        </div>
+
+        <div class="price-card">
+          <h3>Enterprise</h3>
+
+          <h1>Custom</h1>
+
+          <ul>
+            <li>Unlimited Users</li>
+
+            <li>Advanced Security</li>
+
+            <li>Dedicated Manager</li>
+          </ul>
+
+          <button>Contact Us</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <h2>Loved By Thousands</h2>
+
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p>
+            "TaskFlow completely transformed how our team manages projects."
+          </p>
+
+          <h4>Sarah Johnson</h4>
+        </div>
+
+        <div class="testimonial">
+          <p>"The UI is clean, modern and incredibly easy to use."</p>
+
+          <h4>Michael Lee</h4>
+        </div>
+
+        <div class="testimonial">
+          <p>"Highly recommended for startups."</p>
+
+          <h4>Emily Davis</h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Get In Touch</h2>
+
+      <form>
+        <input type="text" placeholder="Your Name" required />
+
+        <input type="email" placeholder="Email Address" required />
+
+        <textarea rows="5" placeholder="Your Message"></textarea>
+
+        <button class="primary-btn">Send Message</button>
+      </form>
+    </section>
+    <footer>
+      <div class="footer-logo">TaskFlow AI</div>
+
+      <p>© 2026 TaskFlow AI. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
